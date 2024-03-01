@@ -1,0 +1,137 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    background-color: #40A2E3;
+    max-width: 1536px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.container {
+    width: 600px;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    /* padding: 2rem; */
+    padding: 0 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all ease 250ms;
+    -o-transition: all ease 250ms;
+    transition: all ease 250ms;
+    -webkit-animation: showJoke 200ms ease-out 1;
+            animation: showJoke 200ms ease-out 1;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-family: cursive;
+    color: rgba(0, 0, 0, 0.908);
+    font-weight: 300;
+}
+
+.joke {
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: monospace;
+    text-align: center;
+    -webkit-animation: showJoke 200ms ease-out 1;
+            animation: showJoke 200ms ease-out 1;
+}
+
+@-webkit-keyframes showJoke {
+    from {
+        opacity: .3;
+        scale: .8;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes showJoke {
+    from {
+        opacity: .3;
+        scale: .8;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+#jokebtn {
+    background-color: #FFC436;
+    width: 10rem;
+    padding: .6rem;
+    border: 3px solid #FFC436;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: monospace;
+    font-size: 1rem;
+    border-radius: 4px;
+    -webkit-transition: all ease 250ms;
+    -o-transition: all ease 250ms;
+    transition: all ease 250ms;
+}
+
+#jokebtn:hover {
+    color: #FFC436;
+    background-color: white;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* mobile view */
+
+@media screen and (max-width:600px) {
+    .wrapper{
+        width: 100%;
+    }
+    .container{
+        width: 90%;
+        padding: 0 1rem;
+    }
+    h3{
+        text-align: center;
+    }
+}
